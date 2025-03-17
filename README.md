@@ -93,11 +93,6 @@ Backend-assigmnet--for-Algo8/
 │-- README.md
 ```
 
-## Deployment
-You can deploy this project on platforms like **Render, Vercel, or Heroku**.
-
-## Contributing
-Feel free to open issues or submit pull requests to improve this project.
 
 ## License
 This project is licensed under the MIT License.
