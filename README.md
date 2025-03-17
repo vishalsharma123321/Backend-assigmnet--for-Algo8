@@ -23,7 +23,7 @@ This project is a Node.js-based backend system implementing authentication and u
 
 ### 1. Clone the repository
 ```bash
-git clone <your-repo-link>
+git clone [<your-repo-link>](https://github.com/vishalsharma123321/Backend-assigmnet--for-Algo8)
 cd backend-auth-api
 ```
 
