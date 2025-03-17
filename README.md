@@ -1,7 +1,7 @@
 # Backend Assignment for Algo8
 
 ## Description
-This is a backend authentication and user management system built using Node.js, Express.js, and MongoDB. The project includes user signup, login, logout, and CRUD operations for managing users.
+This is a backend authentication and user management system built using Node.js, Express.js, and MongoDB. The project includes user signup, login, logout, and CRUD operations for managing users. The entire codebase is fully commented for better readability and understanding.
 
 ## Features
 - **Authentication using JWT**
