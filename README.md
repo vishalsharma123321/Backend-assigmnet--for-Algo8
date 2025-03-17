@@ -94,5 +94,3 @@ Backend-assigmnet--for-Algo8/
 ```
 
 
-## License
-This project is licensed under the MIT License.
