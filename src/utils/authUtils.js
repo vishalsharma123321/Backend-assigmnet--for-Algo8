@@ -26,6 +26,7 @@ export const comparePassword = async (enteredPassword, hashedPassword) => {
  * @param   {string} userId - The unique ID of the user
  * @returns {string} - The generated JWT token
  */
+
 export const generateToken = (userId) => {
   return jwt.sign({ userId }, process.env.JWT_SECRET, {
     expiresIn: "1h", // Token expires in 1 hour for security

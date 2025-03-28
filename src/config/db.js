@@ -10,13 +10,13 @@ dotenv.config();
 const logger = winston.createLogger({
   level: "info",
   format: winston.format.combine(
-    winston.format.timestamp(),
-    winston.format.colorize(),
+    winston.format.timestamp(),//When the log was created.
+    winston.format.colorize(),//Makes logs easier to read.
     winston.format.printf(({ timestamp, level, message }) => {
       return `[${timestamp}] ${level}: ${message}`;
     })
   ),
-  transports: [new winston.transports.Console()],
+  transports: [new winston.transports.Console()], // Logs messages to the console.
 });
 
 /**
@@ -28,13 +28,13 @@ const connectDB = async (retries = 5, delay = 5000) => {
       throw new Error("MONGO_URI is not defined in environment variables.");
     }
 
-    mongoose.set("strictQuery", true); // Enforces strict query rules for performance
+    mongoose.set("strictQuery", true); // Ensures only defined fields can be queried (improves performance).
     const conn = await mongoose.connect(process.env.MONGO_URI, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
+      useNewUrlParser: true, // Uses the new URL parser.
+      useUnifiedTopology: true, // Uses the new MongoDB connection management engine.
     });
 
-    logger.info(`MongoDB Connected: ${conn.connection.host}`);
+    // logger.info(`MongoDB Connected: ${conn.connection.host}`);
   } catch (error) {
     logger.error(`MongoDB Connection Error: ${error.message}`);
 
